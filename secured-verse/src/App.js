@@ -7,6 +7,9 @@ import ReverseShell from "./components/ReverseShell";
 import NetworkScanning from "./components/NetworkScanning";
 import ScriptMenu from "./components/ScriptMenu";
 import FishingChecker from "./components/FishingChecker";
+import Contact from "./components/Contact";
+import Duckey from "./components/Duckey";
+import Payload from "./components/Payload";
 
 const router = createBrowserRouter([
   {
@@ -36,6 +39,18 @@ const router = createBrowserRouter([
   {
     path: "fishingchecker",
     element: <FishingChecker></FishingChecker>,
+  },
+  {
+    path: "contact",
+    element: <Contact></Contact>,
+  },
+  {
+    path: "duckey",
+    element: <Duckey></Duckey>,
+  },
+  {
+    path: "payload",
+    element: <Payload></Payload>,
   },
 ]);
 

@@ -24,7 +24,7 @@ export default function Navbar() {
           PHISH CATHER
         </Link>
         <Link
-          to="/"
+          to="/contact"
           className="md:text-base lg:text-xl hidden md:block font-jura"
         >
           CONTACT

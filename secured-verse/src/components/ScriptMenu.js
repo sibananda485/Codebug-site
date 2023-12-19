@@ -35,11 +35,13 @@ const arr = [
     heading: "Android Payload",
     para: "Phishing is a fraudulent communication that appears to come from a legitimate source, such as email or text messages.",
     img: "https://img.wonderhowto.com/img/80/81/63585942246015/0/sploit-building-android-applications-for-hackers-part-1-introduction-android.1280x600.jpg",
+    link:"/payload"
   },
   {
     heading: "Duckey",
     para: "Phishing is a fraudulent communication that appears to come from a legitimate source, such as email or text messages.",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGn_fhJRb5W8ZGizfCdcFI8iy3gz5gYhElQ&usqp=CAU",
+    link:"/duckey"
   },
 ];
 export default function ScriptMenu() {
