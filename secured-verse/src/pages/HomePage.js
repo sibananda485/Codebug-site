@@ -27,15 +27,26 @@ export default function HomePage() {
           </h1>
           <div className="md:flex flex flex-wrap w-full justify-evenly">
             <div className="bg-gradient-to-b from-black via-black to-teal-950 rounded-[20px] w-[250px] h-[250px] md:w-[500px] md:h-[500px]">
-              <img src={Comedic} alt="" />
+              <img src={Comedic} alt="alt" />
             </div>
             <div>
+            <Link to="/scriptmenu" className="block md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
+                <h1
+                  className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
+                > 
+                  ULTIMATE SCRIPT
+                </h1>
+                <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
+                  WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
+                  SECURITY
+                </div>
+              </Link>
               <div className="md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
                 <Link
-                  to="/phishing"
+                  to="/"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  PHISHING
+                  LEARN MORE
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -44,22 +55,10 @@ export default function HomePage() {
               </div>
               <div className="md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
                 <Link
-                  to="/ddos"
+                  to="/"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  DDOS
-                </Link>
-                <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
-                  WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
-                  SECURITY
-                </div>
-              </div>
-              <div className="md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
-                <Link
-                  to="reverseshell"
-                  className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
-                >
-                  REVERSE SHELL
+                  FREE BOOKS
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -90,6 +89,7 @@ export default function HomePage() {
               <img
                 className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4"
                 src={Man}
+                alt=""
               />
               <div className="m-auto md:p-0 p-2">
                 <div className="text-center text-white text-[30px] font-['KoHo']">
@@ -107,6 +107,7 @@ export default function HomePage() {
               <img
                 className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4 pt-1"
                 src={What}
+                alt=""
               />
               <div className="m-auto md:p-0 p-2">
                 <div className="text-center text-white text-[30px] font-['KoHo']">
@@ -124,6 +125,7 @@ export default function HomePage() {
               <img
                 className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4 pt-1"
                 src={Img}
+                alt=""
               />
               <div className="m-auto md:p-0 p-2">
                 <div className="text-center text-white text-[30px] font-['KoHo']">
@@ -140,6 +142,7 @@ export default function HomePage() {
             <div className="md:w-[1000px] md:h-[408px] w-[375px] bg-white bg-opacity-50 rounded-[10px] shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto my-16">
               <img
                 className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4 pt-1"
+                alt=""
                 src={Cyber}
               />
               <div className="m-auto md:p-0 p-2">

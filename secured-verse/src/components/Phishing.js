@@ -122,13 +122,13 @@ export default function PhishingHeader() {
             You can send any of the links to the victim. Once he/she entered
             his/her id password it will get reflected in the terminal.
           </h2>
-          <img src={a8} alt="" className="my-5 md:max-w-2xl" />
+          <img src={a8} alt="alt" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-[#B80000] text-sm lg:text-2xl">
             You can see the link we have opened is ezlikers. This is the
             phishing page we have opened. Now the user has to enter his/her id
             password
           </h2>
-          <img src={a9} alt="" className="my-5 md:max-w-2xl" />
+          <img src={a9} alt="alt" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-sm lg:text-2xl">
             We got the details of ID and password here. This is how you can
             perform phishing using zphisher. You can send these links to the

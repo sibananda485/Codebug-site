@@ -18,29 +18,24 @@ export default function Navbar() {
           HOME
         </Link>
         <Link
-          to="/phishing"
+          to="/fishingchecker"
           className="md:text-base lg:text-xl hidden md:block font-jura"
         >
           PHISH CATHER
         </Link>
         <Link
-          to="/ddos"
+          to="/"
           className="md:text-base lg:text-xl hidden md:block font-jura"
         >
-          DDOS
+          CONTACT
         </Link>
         <Link
-          to="/reverseshell"
+          to="/"
           className="md:text-base lg:text-xl hidden md:block font-jura"
         >
-          REVERSESHELL
+          ABOUT
         </Link>
-        <Link
-          to="/networkscan"
-          className="md:text-base lg:text-xl hidden md:block font-jura"
-        >
-          NETWORKSCAN
-        </Link>
+      
         <li className="md:text-base lg:text-xl md:hidden">
           <svg
             xmlns="http://www.w3.org/2000/svg"

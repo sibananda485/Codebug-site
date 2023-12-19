@@ -4,7 +4,7 @@ import Git from "../images/github-sign 1.png";
 export default function Footer() {
   return (
     <>
-      <div className="w-full text-white h-fit bg-gradient-to-b from-red-950 to-black shadow mt-16">
+      <div className="w-full text-white h-fit bg-gradient-to-b from-red-950 to-black shadow">
         <div>
           <div className="w-[80%] h-[151px] bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto mt-10 flex justify-evenly items-center flex-wrap">
             <a href="#">

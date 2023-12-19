@@ -5,6 +5,8 @@ import HomePage from "./pages/HomePage";
 import Ddos from "./components/Ddos";
 import ReverseShell from "./components/ReverseShell";
 import NetworkScanning from "./components/NetworkScanning";
+import ScriptMenu from "./components/ScriptMenu";
+import FishingChecker from "./components/FishingChecker";
 
 const router = createBrowserRouter([
   {
@@ -26,6 +28,14 @@ const router = createBrowserRouter([
   {
     path: "networkscan",
     element: <NetworkScanning></NetworkScanning>,
+  },
+  {
+    path: "scriptmenu",
+    element: <ScriptMenu></ScriptMenu>,
+  },
+  {
+    path: "fishingchecker",
+    element: <FishingChecker></FishingChecker>,
   },
 ]);
 
