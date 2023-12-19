@@ -1,5 +1,5 @@
 import React from "react";
-import PhisingHeader from "./components/PhishingHeader";
+import Phising from "./components/Phishing";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import HomePage from "./pages/HomePage";
 import Ddos from "./components/Ddos";
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: "phishing",
-    element: <PhisingHeader></PhisingHeader>,
+    element: <Phising></Phising>,
   },
   {
     path: "ddos",

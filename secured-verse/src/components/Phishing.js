@@ -1,16 +1,15 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Terminal from "./Terminal";
-import FishingLogo from "../assets/phising/phishing.png";
-import Step1 from "../assets/phising/step1.png";
-import Step2 from "../assets/phising/step2.png";
-import Step3 from "../assets/phising/step3.png";
-import Step4 from "../assets/phising/step4.png";
-import Step5 from "../assets/phising/step5.png";
-import Example from "../assets/phising/example.png";
-import Example2 from "../assets/phising/exaple2.png";
-import Example3 from "../assets/phising/example3.png";
-import Git from "../images/github-sign 1.png";
+import a1 from "../assets/phishing/phishing.png";
+import a2 from "../assets/phishing/1.png";
+import a3 from "../assets/phishing/2.png";
+import a4 from "../assets/phishing/3.png";
+import a5 from "../assets/phishing/4.png";
+import a6 from "../assets/phishing/5.png";
+import a7 from "../assets/phishing/6.png";
+import a8 from "../assets/phishing/7.png";
+import a9 from "../assets/phishing/8.png";
 import Footer from "./Footer";
 
 export default function PhishingHeader() {
@@ -21,7 +20,7 @@ export default function PhishingHeader() {
       <div className="bg-gradient-to-r from-black to-[#003706]">
         <div className="relative mx-auto max-w-7xl text-white py-28 flex flex-col justify-center items-center gap-5 lg:py-32 lg:gap-10">
           <Navbar></Navbar>
-          <img src={FishingLogo} alt="fishing" className="w-40 lg:w-72" />
+          <img src={a1} alt="fishing" className="w-40 lg:w-72" />
           <h1 className="font-juli text-3xl md:text-5xl">Phishing</h1>
           <p className="font-advent text-lg text-center text-[rgba(255,255,255,0.68)] px-2 md:text-2xl sm:px-10 xl:px-56 lg:text-start">
             Phishing is like a trick played by cybercriminals. They pretend to
@@ -61,7 +60,7 @@ export default function PhishingHeader() {
           <Terminal text="git clone https://github.com/htr-tech/zphisher.git"></Terminal>
           <Terminal text="cd zphisher"></Terminal>
 
-          <img src={Step1} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Step - 2 */}
@@ -73,7 +72,7 @@ export default function PhishingHeader() {
           </h2>
           <Terminal text="bash zphisher.sh"></Terminal>
 
-          <img src={Step2} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a3} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Step - 3 */}
@@ -84,7 +83,7 @@ export default function PhishingHeader() {
             the options from the tool for which you have to make the phishing
             page.
           </h2>
-          <img src={Step3} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a4} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Step - 4 */}
@@ -95,7 +94,7 @@ export default function PhishingHeader() {
             create a phishing page. Suppose you want to create a phishing page
             for Instagram then choose option 2.{" "}
           </h2>
-          <img src={Step4} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a5} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Step - 5 */}
@@ -106,7 +105,7 @@ export default function PhishingHeader() {
             web templates. You can choose any option from here. Suppose you want
             to choose the first option then type 1..
           </h2>
-          <img src={Step5} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a6} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Example */}
@@ -118,18 +117,18 @@ export default function PhishingHeader() {
           <h2 className="font-lec font-bold text-[#0009ED] text-sm lg:text-2xl">
             After launching the tool you will see this interface.
           </h2>
-          <img src={Example} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a7} alt="terminal" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-[#00FF19] text-sm lg:text-2xl">
             You can send any of the links to the victim. Once he/she entered
             his/her id password it will get reflected in the terminal.
           </h2>
-          <img src={Example2} alt="" className="my-5 md:max-w-2xl" />
+          <img src={a8} alt="" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-[#B80000] text-sm lg:text-2xl">
             You can see the link we have opened is ezlikers. This is the
             phishing page we have opened. Now the user has to enter his/her id
             password
           </h2>
-          <img src={Example3} alt="" className="my-5 md:max-w-2xl" />
+          <img src={a9} alt="" className="my-5 md:max-w-2xl" />
           <h2 className="font-lec font-bold text-sm lg:text-2xl">
             We got the details of ID and password here. This is how you can
             perform phishing using zphisher. You can send these links to the
@@ -142,7 +141,6 @@ export default function PhishingHeader() {
             than Social Engineering Toolkit
           </h2>
         </div>
-        
       </div>
       <Footer></Footer>
     </>

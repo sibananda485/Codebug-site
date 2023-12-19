@@ -1,11 +1,14 @@
 import React from "react";
 import Navbar from "./Navbar";
-import FishingLogo from "../assets/phising/phishing.png";
+import FishingLogo from "../assets/ddos/ddos.png";
 import Terminal from "./Terminal";
-import Test from "../assets/phising/step1.png";
-import Footer from "./Footer";
+import a1 from "../assets/ddos/1.png";
+import a2 from "../assets/ddos/2&4.png";
+import a3 from "../assets/ddos/3.png";
+import Footer from "./Footer"; 
 
 export default function Ddos() {
+  window.scrollTo(0, 0);
   return (
     <>
       {/* Intro */}
@@ -52,7 +55,7 @@ export default function Ddos() {
           <h1 className="font-juli text-3xl md:text-5xl">Method 1:</h1>
           <Terminal text="sudo hping3 -1 —flood 192.168.0.113"></Terminal>
           <Terminal text="cd zphisher"></Terminal>
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a1} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
             <span className="text-red-500">Effect after Execution:</span> <br />
@@ -63,7 +66,7 @@ export default function Ddos() {
             completely unavailable to legitimate users.
           </h2>
           <h2 className="font-lec font-bold text-sm lg:text-2xl">Result:</h2>
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
 
         {/* Method 2 */}
@@ -71,7 +74,7 @@ export default function Ddos() {
           <h1 className="font-juli text-3xl md:text-5xl">Method 2:</h1>
           <Terminal text="sudo hping3 -d 200 -p 80 -S --flood 192.168.0.113"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a3} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
             <span className="text-red-500">Effect after Execution:</span> <br />
@@ -82,7 +85,7 @@ export default function Ddos() {
             completely unavailable to legitimate users.
           </h2>
           <h2 className="font-lec font-bold text-sm lg:text-2xl">Result:</h2>
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
       </div>
       <Footer></Footer>

@@ -1,7 +1,12 @@
 import React from "react";
 import Navbar from "./Navbar";
-import FishingLogo from "../assets/phising/phishing.png";
-import Test from "../assets/phising/step1.png";
+import Footer from "./Footer";
+import FishingLogo from "../assets/networkScan/networkScan.png";
+import a1 from "../assets/networkScan/1.png";
+import a2 from "../assets/networkScan/2.png";
+import a3 from "../assets/networkScan/3.png";
+import a4 from "../assets/networkScan/4.png";
+
 import Terminal from "./Terminal";
 
 export default function NetworkScanning() {
@@ -53,7 +58,7 @@ export default function NetworkScanning() {
           <h1 className="font-juli text-3xl md:text-5xl">Method 1:</h1>
           <Terminal text="nmap -sP 192.168.0.1/24"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a1} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#00FF19] text-sm lg:text-2xl">
             This command is used to perform a ping scan on a range of IP
@@ -75,7 +80,7 @@ export default function NetworkScanning() {
           <h1 className="font-juli text-3xl md:text-5xl">Method 2:</h1>
           <Terminal text="sudo nmap -sT -p 80,443 192.168.0.1/24"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#00FF19] text-sm lg:text-2xl">
             This is used to perform a TCP connect scan (-sT) targeting the
@@ -97,7 +102,7 @@ export default function NetworkScanning() {
           <h1 className="font-juli text-3xl md:text-5xl">Method 3:</h1>
           <Terminal text="sudo nmap -sS -p 80,443 192.168.0.1/24"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a3} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#00FF19] text-sm lg:text-2xl">
             This is used to perform a TCP SYN scan (-sS) on the specified ports
@@ -120,7 +125,7 @@ export default function NetworkScanning() {
           <h1 className="font-juli text-3xl md:text-5xl">Method 4:</h1>
           <Terminal text="man nmap"></Terminal>
 
-          <img src={Test} alt="terminal" className="my-5 md:max-w-2xl" />
+          <img src={a4} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#00FF19] text-sm lg:text-2xl">
             The man command in Unix-like operating systems is used to display
@@ -137,6 +142,7 @@ export default function NetworkScanning() {
         </div>
         
       </div>
+      <Footer></Footer>
     </>
   );
 }
