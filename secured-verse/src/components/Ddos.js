@@ -35,6 +35,7 @@ export default function Ddos() {
       </div>
 
       <div className="mx-auto max-w-7xl ">
+        
         {/* Disclaimer */}
         <div className="text-white space-y-5 px-2 my-10 lg:my-10 lg:px-48 ">
           <h1 className="font-handjet text-red-500 text-3xl md:text-5xl text-center">
@@ -90,6 +91,7 @@ export default function Ddos() {
           <h2 className="font-lec font-bold text-sm lg:text-2xl">Result:</h2>
           <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
         </div>
+
       </div>
       <Footer></Footer>
     </>

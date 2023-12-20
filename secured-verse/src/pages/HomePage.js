@@ -30,10 +30,11 @@ export default function HomePage() {
               <img src={Comedic} alt="alt" />
             </div>
             <div>
-            <Link to="/scriptmenu" className="block md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
-                <h1
-                  className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
-                > 
+              <Link
+                to="/scriptmenu"
+                className="block md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl"
+              >
+                <h1 className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2">
                   ULTIMATE SCRIPT
                 </h1>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">

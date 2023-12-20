@@ -27,6 +27,7 @@ export default function Duckey() {
       </div>
 
       <div className="mx-auto max-w-7xl ">
+
         {/* Disclaimer */}
         <div className="text-white space-y-5 px-2 my-10 lg:my-10 lg:px-48 ">
           <h1 className="font-handjet text-red-500 text-3xl md:text-5xl text-center">
@@ -45,6 +46,7 @@ export default function Duckey() {
 
         <img src={Intro} alt="" className="lg:mx-auto my-5 lg:mb-20" />
       </div>
+      
       <Footer></Footer>
     </>
   );

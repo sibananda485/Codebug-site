@@ -85,7 +85,6 @@ const popularSites = [
 
 const phishingUrl = "https://example.com"; // Replace with the URL you want to check
 const result = isPhishing(popularSites, phishingUrl);
-console.log(result);
 
 export default function FishingChecker() {
   const [data, setData] = useState("");
