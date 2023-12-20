@@ -41,7 +41,7 @@ export default function Navbar() {
           HOME
         </Link>
         <Link
-          to="/fishingchecker"
+          to="/phishingchecker"
           className="md:text-base lg:text-xl hidden md:block font-jura"
         >
           PHISH CATHER
@@ -90,12 +90,12 @@ export default function Navbar() {
               </p>
             </Link>
           </li>
-          <Link to="/" className="bg-[#0033ff24] text-cyan-200 ps-2 py-1 rounded-md">
+          <Link to="/" className="block bg-[#0033ff24] text-cyan-200 ps-2 py-1 rounded-md">
             HOME
           </Link>
-          <Link to="/phishingchecker" className=" ps-2 py-1 rounded-md">PHISH CATCHER</Link>
-          <Link to="/contact" className=" ps-2 py-1 rounded-md">CONTACT</Link>
-          <Link to="/about" className=" ps-2 py-1 rounded-md">ABOUT</Link>
+          <Link to="/phishingchecker" className="block ps-2 py-1 rounded-md">PHISH CATCHER</Link>
+          <Link to="/contact" className="block ps-2 py-1 rounded-md">CONTACT</Link>
+          <Link to="/about" className="block ps-2 py-1 rounded-md">ABOUT</Link>
         </ul>
         <svg
         onClick={handleClose}
