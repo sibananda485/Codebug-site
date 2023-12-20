@@ -10,6 +10,7 @@ import FishingChecker from "./components/FishingChecker";
 import Contact from "./components/Contact";
 import Duckey from "./components/Duckey";
 import Payload from "./components/Payload";
+import Books from "./components/Books";
 
 const router = createBrowserRouter([
   {
@@ -51,6 +52,10 @@ const router = createBrowserRouter([
   {
     path: "payload",
     element: <Payload></Payload>,
+  },
+  {
+    path: "books",
+    element: <Books></Books>,
   },
 ]);
 

