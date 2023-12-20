@@ -39,7 +39,7 @@ const router = createBrowserRouter([
     element: <ScriptMenu></ScriptMenu>,
   },
   {
-    path: "fishingchecker",
+    path: "phishingchecker",
     element: <FishingChecker></FishingChecker>,
   },
   {
