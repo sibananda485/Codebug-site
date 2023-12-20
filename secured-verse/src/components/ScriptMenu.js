@@ -52,9 +52,12 @@ export default function ScriptMenu() {
           <Navbar></Navbar>
           <h1 className="font-juli text-3xl md:text-5xl">Choose attack</h1>
           <div className="space-y-5 sm:space-y-0 px-2 xl:px-0 sm:grid grid-cols-2 gap-5">
-            {arr.map((v,i) => {
+            {arr.map((v, i) => {
               return (
-                <div key={i} className="lg:flex gap-5 rounded-md overflow-hidden bg-[#ffffff20]">
+                <div
+                  key={i}
+                  className="lg:flex gap-5 rounded-md overflow-hidden bg-[#ffffff20]"
+                >
                   <div className="h-52 w-full lg:w-[45rem]">
                     <img
                       src={v.img}

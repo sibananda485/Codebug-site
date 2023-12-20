@@ -11,6 +11,7 @@ import Contact from "./components/Contact";
 import Duckey from "./components/Duckey";
 import Payload from "./components/Payload";
 import Books from "./components/Books";
+import About from "./components/About";
 
 const router = createBrowserRouter([
   {
@@ -56,6 +57,10 @@ const router = createBrowserRouter([
   {
     path: "books",
     element: <Books></Books>,
+  },
+  {
+    path: "about",
+    element: <About></About>,
   },
 ]);
 

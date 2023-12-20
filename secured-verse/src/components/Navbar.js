@@ -53,7 +53,7 @@ export default function Navbar() {
           CONTACT
         </Link>
         <Link
-          to="/"
+          to="/about"
           className="md:text-base lg:text-xl hidden md:block font-jura"
         >
           ABOUT
@@ -79,6 +79,7 @@ export default function Navbar() {
         </li>
       </ul>
 
+      {/* Mobile Side Navbar */}
       <div id="mobileMenu" className="h-screen w-full bg-[#000000ae] fixed top-0 flex items-start justify-between hidden">
         <ul id="ul" className="bg-gradient-to-r from-black to-[#003706] relative -left-96  transition-all duration-500 h-full space-y-3 w-fit p-3 pr-7 sm:p-4">
           <li>
@@ -89,12 +90,12 @@ export default function Navbar() {
               </p>
             </Link>
           </li>
-          <li className="bg-[#0033ff24] text-cyan-200 ps-2 py-1 rounded-md">
+          <Link to="/" className="bg-[#0033ff24] text-cyan-200 ps-2 py-1 rounded-md">
             HOME
-          </li>
-          <li className=" ps-2 py-1 rounded-md">PHISH CATCHER</li>
-          <li className=" ps-2 py-1 rounded-md">CONTACT</li>
-          <li className=" ps-2 py-1 rounded-md">ABOUT</li>
+          </Link>
+          <Link to="/phishingchecker" className=" ps-2 py-1 rounded-md">PHISH CATCHER</Link>
+          <Link to="/contact" className=" ps-2 py-1 rounded-md">CONTACT</Link>
+          <Link to="/about" className=" ps-2 py-1 rounded-md">ABOUT</Link>
         </ul>
         <svg
         onClick={handleClose}
