@@ -18,6 +18,7 @@ export default function Navbar() {
     const btn = document.getElementById("menuButton")
     const ul = document.getElementById("ul")
     btn.classList.add("hidden")
+    ele.classList.add("flex")
     ele.classList.remove("hidden")
     setTimeout(()=>{
       ul.classList.add("left-0")
@@ -80,7 +81,7 @@ export default function Navbar() {
       </ul>
 
       {/* Mobile Side Navbar */}
-      <div id="mobileMenu" className="h-screen w-full bg-[#000000ae] fixed top-0 flex items-start justify-between hidden">
+      <div id="mobileMenu" className="h-screen w-full bg-[#000000ae] fixed top-0  items-start justify-between hidden">
         <ul id="ul" className="bg-gradient-to-r from-black to-[#003706] relative -left-96  transition-all duration-500 h-full space-y-3 w-fit p-3 pr-7 sm:p-4">
           <li>
             <Link to="/" className="mr-auto flex items-center gap-2">
@@ -114,6 +115,7 @@ export default function Navbar() {
           />
         </svg>
       </div>
+
     </>
   );
 }

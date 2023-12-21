@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import Navbar from "./Navbar";
+import Footer from "./Footer";
 // phishingChecker.js
 
 function extractDomainAndSubdomain(url) {
@@ -94,6 +95,7 @@ const popularSites = [
 ];
 
 export default function FishingChecker() {
+  window.scroll(0, 0);
   const [data, setData] = useState("");
   const [result, setResult] = useState(false);
   const [display, setDisplay] = useState(false);
@@ -136,6 +138,7 @@ export default function FishingChecker() {
           </h1>
           <form className="text-center">
             <input
+              placeholder="Enter URL"
               type="text"
               onChange={handleChange}
               value={data}
@@ -215,6 +218,7 @@ export default function FishingChecker() {
           )}
         </div>
       </div>
+      <Footer></Footer>
     </>
   );
 }

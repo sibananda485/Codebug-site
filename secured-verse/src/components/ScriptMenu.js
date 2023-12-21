@@ -78,9 +78,9 @@ export default function ScriptMenu() {
                         >
                           script
                         </Link>
-                        <button className="bg-cyan-200 rounded-md py-1 text-black px-2 mr-2">
+                        <Link to={`/safe${v.link}`} className="bg-cyan-200 rounded-md py-1 text-black px-2 mr-2">
                           safety
-                        </button>
+                        </Link>
                       </div>
                     </div>
                   </div>

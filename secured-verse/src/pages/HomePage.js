@@ -22,10 +22,10 @@ export default function HomePage() {
 
         {/* ellipse */}
         <div className="w-full h-auto bg-white rounded-t-3xl">
-          <h1 className="text-center mb-5 pt-2 text-black font-light font-['Handjet'] text-4xl md:text-7xl">
+          <h1 className="text-center my-10 pt-2 text-black font-light font-['Handjet'] text-4xl md:text-7xl">
             ARE YOU SECURE ?
           </h1>
-          <div className="md:flex flex flex-wrap w-full justify-evenly">
+          <div className="md:flex flex flex-wrap w-full justify-center items-center gap-20">
             <div className="bg-gradient-to-b from-black via-black to-teal-950 rounded-[20px] w-[250px] h-[250px] md:w-[500px] md:h-[500px]">
               <img src={Comedic} alt="alt" />
             </div>
@@ -44,10 +44,10 @@ export default function HomePage() {
               </Link>
               <div className="md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
                 <Link
-                  to="/"
+                  to="/phishingchecker"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  LEARN MORE
+                  PHISH CATCHER
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -68,10 +68,10 @@ export default function HomePage() {
               </div>
               <div className="md:w-[500px] md:h-[120px] w-[80vw] h-[100px] md:my-4 my-6 bg-slate-50 rounded-[10px] border-2 shadow-2xl">
                 <Link
-                  to="/networkscan"
+                  to="/contact"
                   className="text-slate-900 text-[12px] md:text-[35px] font-normal font-['Jaldi'] md:pt-0 pt-2 px-2"
                 >
-                  NETWORK SCANNING
+                  CONTACT
                 </Link>
                 <div className="text-black text-opacity-70 text-sm md:text-lg font-normal font-['Jaldi'] p-2">
                   WE ARE PROVIDING HACKING SCRIPTS THAT CAN HELP YOU LEARN ABOUT
@@ -82,21 +82,21 @@ export default function HomePage() {
           </div>
           <div className="flex w-full items-center justify-evenly text-black md:text-7xl text-4xl mt-2 mb-16 font-['Julius Sans One'] font-normal">
             <div>←</div>
-            <div>EXPLORE US</div>
+            <div className="my-5">EXPLORE US</div>
             <div>→</div>
           </div>
-          <div className="w-[90vw] h-fit bg-gradient-to-b from-rose-900 to-black rounded-[15px] shadow text-black m-auto flex flex-col justify-between">
-            <div className="md:w-[1000px] md:h-[408px] w-[375px] bg-white bg-opacity-50 rounded-[10px] shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto my-16">
+          <div class="mx-1 px-2 py-2 max-w-7xl lg:mx-auto bg-gradient-to-r from-black to-[#003706] rounded-xl shadow-2xl text-black">
+            <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto mb-8">
               <img
-                className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4"
+                class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:ml-[-100px] mx-auto md:mx-4"
                 src={Man}
                 alt=""
               />
-              <div className="m-auto md:p-0 p-2">
-                <div className="text-center text-white text-[30px] font-['KoHo']">
+              <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
+                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
                   HEADING
                 </div>
-                <div className="text-white md:text-2xl font-normal md:text-left fpnt-['KoHo']">
+                <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
                   A paragraph is a series of sentences that are organized and
                   coherent, and are all related to a single topic. Almost every
                   piece of writing you do that is longer than a few sentences
@@ -104,17 +104,18 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="md:w-[1000px] md:h-[408px] w-[375px] bg-white bg-opacity-50 rounded-[10px] shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto mb-8">
+
+            <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto mb-8">
               <img
-                className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4 pt-1"
+              alt=""
+                class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:mr-[-100px] mx-auto md:mx-4"
                 src={What}
-                alt=""
               />
-              <div className="m-auto md:p-0 p-2">
-                <div className="text-center text-white text-[30px] font-['KoHo']">
+              <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
+                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
                   HEADING
                 </div>
-                <div className="text-white md:text-2xl font-normal md:text-right fpnt-['KoHo'] md:px-2">
+                <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
                   A paragraph is a series of sentences that are organized and
                   coherent, and are all related to a single topic. Almost every
                   piece of writing you do that is longer than a few sentences
@@ -122,17 +123,18 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="md:w-[1000px] md:h-[408px] w-[375px] bg-white bg-opacity-50 rounded-[10px] shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto mt-8">
+
+            <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto mb-8">
               <img
-                className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4 pt-1"
+                class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:ml-[-100px] mx-auto md:mx-4"
                 src={Img}
                 alt=""
               />
-              <div className="m-auto md:p-0 p-2">
-                <div className="text-center text-white text-[30px] font-['KoHo']">
+              <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
+                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
                   HEADING
                 </div>
-                <div className="text-white md:text-2xl font-normal md:text-left fpnt-['KoHo']">
+                <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
                   A paragraph is a series of sentences that are organized and
                   coherent, and are all related to a single topic. Almost every
                   piece of writing you do that is longer than a few sentences
@@ -140,17 +142,18 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-            <div className="md:w-[1000px] md:h-[408px] w-[375px] bg-white bg-opacity-50 rounded-[10px] shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto my-16">
+
+            <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto mb-8">
               <img
-                className="md:w-[550px] md:h-80 w-[350px] rounded-[10px] mx-auto md:mx-4 pt-1"
-                alt=""
+              alt=""
+                class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:mr-[-100px] mx-auto md:mx-4"
                 src={Cyber}
               />
-              <div className="m-auto md:p-0 p-2">
-                <div className="text-center text-white text-[30px] font-['KoHo'] md:px-2">
+              <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
+                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
                   HEADING
                 </div>
-                <div className="text-white md:text-2xl font-normal md:text-right fpnt-['KoHo']">
+                <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
                   A paragraph is a series of sentences that are organized and
                   coherent, and are all related to a single topic. Almost every
                   piece of writing you do that is longer than a few sentences

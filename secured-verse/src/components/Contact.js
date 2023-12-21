@@ -4,6 +4,7 @@ import Footer from "./Footer";
 import Img from "../assets/cyber_security.jpg";
 
 export default function Contact() {
+  window.scroll(0, 0);
   return (
     <>
       <div className="bg-gradient-to-r from-black to-[#003706] text-white">

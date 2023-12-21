@@ -7,6 +7,7 @@ const arr = [1, 1,1];
 //     dept:""
 // }]
 export default function About() {
+  window.scroll(0, 0);
   return (
     <>
       <div className="bg-gradient-to-r from-black to-[#003706] text-white">

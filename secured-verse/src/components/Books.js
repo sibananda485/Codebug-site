@@ -94,6 +94,7 @@ const books = [
 ];
 
 export default function Books() {
+  window.scroll(0, 0);
   return (
     <>
       <div className="bg-gradient-to-r from-black to-green-800 text-white">
@@ -124,11 +125,12 @@ export default function Books() {
                     className="bg-green-500 text-white px-3 py-2 rounded-md text-center font-semibold"
                   >
                     Download E-book
-                  </a>
+                  </a> 
                   <a
                     className="bg-green-500 text-white px-3 py-2 rounded-md text-center font-semibold"
                     href="https://www.amazon.in/Beginning-Ethical-Hacking-Kali-Linux/dp/1484238907"
                     target="_blank"
+                    rel="noreferrer"
                   >
                     Buy Hard Copy
                   </a>

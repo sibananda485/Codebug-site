@@ -4,9 +4,9 @@ import Git from "../images/github-sign 1.png";
 export default function Footer() {
   return (
     <>
-      <div className="w-full text-white h-fit bg-gradient-to-b from-red-950 to-black shadow">
+      <div className="w-full text-white h-fit bg-gradient-to-b from-red-950 to-black shadow mt-10">
         <div>
-          <div className="w-[80%] h-[151px] bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto mt-10 flex justify-evenly items-center flex-wrap">
+          <div className="w-[80%] h-[151px] bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto flex justify-evenly items-center flex-wrap">
             <a href="#">
               <img
                 className="hover:scale-110 duration-500 md:w-[100px] md:h-[100px] w-[50px] h-[50px]"
