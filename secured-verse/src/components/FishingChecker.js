@@ -11,7 +11,6 @@ function extractDomainAndSubdomain(url) {
     const subdomain = domainParts.slice(0, -2).join(".");
     return { domain, subdomain };
   } catch (error) {
-    console.error(`Invalid URL: ${url}`);
     return null;
   }
 }
@@ -92,6 +91,7 @@ const popularSites = [
   "https://www.livejournal.com/",
   "https://www.myheritage.com/",
   "https://www.care2.com/",
+  "https://codebug-site.vercel.app/",
 ];
 
 export default function FishingChecker() {
@@ -192,7 +192,7 @@ export default function FishingChecker() {
                   />
                 </svg>
 
-                <p>Not Phishing Site</p>
+                <p>Not a Phishing Site</p>
               </div>
             )
           ) : null}
