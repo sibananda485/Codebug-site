@@ -18,6 +18,7 @@ import a12 from "../assets/androidPayload/12.jpeg";
 import a13 from "../assets/androidPayload/13.jpeg";
 import a14 from "../assets/androidPayload/14.jpeg";
 import a15 from "../assets/androidPayload/15.jpeg";
+import AndroidPayload from "../assets/androidPayload/android payload.png";
 
 export default function Payload() {
   window.scrollTo(0, 0);
@@ -61,6 +62,9 @@ export default function Payload() {
             violate applicable laws or regulations.
           </p>
         </div>
+
+        <img src={AndroidPayload} alt="" className="lg:mx-auto my-5 lg:mb-20 shadow-2xl"/>
+
 
         {/* Generating the payload */}
         {/* Step 1 */}

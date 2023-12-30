@@ -51,7 +51,7 @@ export default function ScriptMenu() {
         <div className="relative mx-auto max-w-7xl text-white py-28 flex flex-col justify-center items-center gap-5 lg:py-32 lg:gap-10">
           <Navbar></Navbar>
           <h1 className="font-juli text-3xl md:text-5xl">Choose attack</h1>
-          <div className="space-y-5 sm:space-y-0 px-2 xl:px-0 sm:grid grid-cols-2 gap-5">
+          <div className="space-y-5 sm:space-y-0 px-5 xl:px-0 sm:grid grid-cols-2 gap-5">
             {arr.map((v, i) => {
               return (
                 <div
@@ -65,7 +65,7 @@ export default function ScriptMenu() {
                       className={`h-full w-full object-cover object-${v.position}`}
                     />
                   </div>
-                  <div className="space-y-8 lg:space-y-0 p-2 lg:px-0 md:py-5 flex flex-col justify-between">
+                  <div className="space-y-8 lg:space-y-0 p-5 lg:px-0 md:py-5 flex flex-col justify-between">
                     <div className="space-y-1">
                       <h1 className="text-lg font-semibold">{v.heading}</h1>
                       <p>{v.para}</p>

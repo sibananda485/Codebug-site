@@ -5,6 +5,7 @@ import Terminal from "./Terminal";
 import a1 from "../assets/ddos/1.png";
 import a2 from "../assets/ddos/2&4.png";
 import a3 from "../assets/ddos/3.png";
+import DOSANDDOS from "../assets/ddos/DOS AND DDOS.png"
 import Intro from "../assets/ddos/DOS.png"
 import Footer from "./Footer"; 
 
@@ -52,7 +53,8 @@ export default function Ddos() {
           </p>
         </div>
 
-        <img src={Intro} alt="" className="lg:mx-auto my-5 lg:mb-20"/>
+        <img src={DOSANDDOS} alt="" className="lg:mx-auto my-5 lg:mb-20 shadow-2xl"/>
+        <img src={Intro} alt="" className="lg:mx-auto my-5 lg:mb-20 shadow-2xl"/>
 
         {/* Method 1 */}
         <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">

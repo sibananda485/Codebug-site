@@ -10,6 +10,7 @@ import a6 from "../assets/phishing/5.png";
 import a7 from "../assets/phishing/6.png";
 import a8 from "../assets/phishing/7.png";
 import a9 from "../assets/phishing/8.png";
+import PhishingIntro from "../assets/phishing/phishingIntro.png";
 import Footer from "./Footer";
 
 export default function PhishingHeader() {
@@ -49,6 +50,9 @@ export default function PhishingHeader() {
             violate applicable laws or regulations.
           </p>
         </div>
+
+        <img src={PhishingIntro} alt="" className="lg:mx-auto my-5 lg:mb-20 shadow-2xl"/>
+
 
         {/* Step - 1 */}
         <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">

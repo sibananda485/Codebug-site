@@ -80,12 +80,14 @@ export default function HomePage() {
               </div>
             </div>
           </div>
-          <div className="flex w-full items-center justify-evenly text-black md:text-7xl text-4xl mt-2 mb-16 font-['Julius Sans One'] font-normal">
+          <div className="flex w-full items-center justify-evenly text-black md:text-7xl text-4xl my-5 font-['Julius Sans One'] font-normal">
             <div>←</div>
             <div className="my-5">EXPLORE US</div>
             <div>→</div>
           </div>
+
           <div class="mx-1 px-2 py-2 max-w-7xl lg:mx-auto bg-gradient-to-r from-black to-[#003706] rounded-xl shadow-2xl text-black">
+
             <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto mb-8">
               <img
                 class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:ml-[-100px] mx-auto md:mx-4"
@@ -93,33 +95,33 @@ export default function HomePage() {
                 alt=""
               />
               <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
-                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
-                  HEADING
+                <div class="text-center md:text-start px-5 my-5 text-white text-[30px] font-['KoHo']">
+                  What is cyber security ?
                 </div>
                 <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
-                  A paragraph is a series of sentences that are organized and
-                  coherent, and are all related to a single topic. Almost every
-                  piece of writing you do that is longer than a few sentences
-                  should be organized into paragraphs.
+                  Cybersecurity involves protecting computer systems and data
+                  from unauthorized access or damage, ensuring confidentiality,
+                  integrity, and availability. It includes measures like
+                  authentication, encryption, and network security to counter
+                  cyber threats.
                 </div>
               </div>
             </div>
 
             <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto mb-8">
               <img
-              alt=""
+                alt=""
                 class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:mr-[-100px] mx-auto md:mx-4"
                 src={What}
               />
               <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
-                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
-                  HEADING
+                <div class="text-center  md:text-start my-5 text-white px-5 text-[30px] font-['KoHo']">
+                  What is cyber crime ?
                 </div>
                 <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
-                  A paragraph is a series of sentences that are organized and
-                  coherent, and are all related to a single topic. Almost every
-                  piece of writing you do that is longer than a few sentences
-                  should be organized into paragraphs.
+                  Cybercrime is illegal activities using digital methods, like
+                  hacking, phishing, and malware, to exploit vulnerabilities in
+                  computer systems for fraud, theft, or disruption.
                 </div>
               </div>
             </div>
@@ -132,35 +134,35 @@ export default function HomePage() {
               />
               <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
                 <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
-                  HEADING
+                  Types of hackers -
                 </div>
-                <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
-                  A paragraph is a series of sentences that are organized and
-                  coherent, and are all related to a single topic. Almost every
-                  piece of writing you do that is longer than a few sentences
-                  should be organized into paragraphs.
+                <div class="text-white w-fit mx-auto text-start md:text-center md:text-start md:text-2xl font-normal fpnt-['KoHo']">
+                  1.Whitehat hackers <br />
+                  2.Blackhat hackers <br />
+                  3.Grayhat hackers <br />
                 </div>
               </div>
             </div>
 
             <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row-reverse flex-col md:items-center m-auto mb-8">
               <img
-              alt=""
+                alt=""
                 class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:mr-[-100px] mx-auto md:mx-4"
                 src={Cyber}
               />
               <div class="m-auto pb-8 md:pb-0 md:p-0 p-2">
-                <div class="text-center my-5 text-white text-[30px] font-['KoHo']">
-                  HEADING
+                <div class="text-center md:text-start my-5 text-white text-[30px] font-['KoHo']">
+                  Types of cyber attacks -
                 </div>
-                <div class="text-white text-center md:text-start md:text-2xl font-normal fpnt-['KoHo'] md:px-5">
-                  A paragraph is a series of sentences that are organized and
-                  coherent, and are all related to a single topic. Almost every
-                  piece of writing you do that is longer than a few sentences
-                  should be organized into paragraphs.
+                <div class="text-white w-fit mx-auto md:text-start md:text-2xl font-normal fpnt-['KoHo']">
+                  1.System based attacks <br />
+                  2.Web based attacks <br />
+                  3.Networks based attacks <br />
+                  4.Social engineering based hackers <br />
                 </div>
               </div>
             </div>
+
           </div>
           <Footer></Footer>
         </div>

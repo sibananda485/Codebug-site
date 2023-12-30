@@ -9,6 +9,8 @@ import a3 from "../assets/reverseShell/3.png";
 import a4 from "../assets/reverseShell/4.png";
 import a5 from "../assets/reverseShell/5.png";
 import a6 from "../assets/reverseShell/6.png";
+import REVERSE_SHELL from "../assets/reverseShell/REVERSE SHELL.png";
+
 
 export default function ReverseShell() {
   window.scrollTo(0, 0);
@@ -49,6 +51,8 @@ export default function ReverseShell() {
             violate applicable laws or regulations.
           </p>
         </div>
+
+        <img src={REVERSE_SHELL} alt="" className="lg:mx-auto my-5 lg:mb-20 shadow-2xl"/>
 
         {/* Linux and Linux */}
         <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">

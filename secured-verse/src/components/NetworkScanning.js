@@ -6,6 +6,7 @@ import a1 from "../assets/networkScan/1.png";
 import a2 from "../assets/networkScan/2.png";
 import a3 from "../assets/networkScan/3.png";
 import a4 from "../assets/networkScan/4.png";
+import NetworkScanningIntro from "../assets/networkScan/NetworkScanning.jpeg";
 
 import Terminal from "./Terminal";
 
@@ -49,6 +50,9 @@ export default function NetworkScanning() {
             violate applicable laws or regulations.
           </p>
         </div>
+
+        <img src={NetworkScanningIntro} alt="" className="lg:mx-auto my-5 lg:mb-20 shadow-2xl"/>
+
 
         {/* Method 1 */}
         <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
