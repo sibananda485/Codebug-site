@@ -30,7 +30,11 @@ const router = createBrowserRouter([
     element: <><Top></Top><ScriptMenu></ScriptMenu></>,
   },
   {
+<<<<<<< Updated upstream
     path: "phishingchecker",
+=======
+    path: "fishingchecker",
+>>>>>>> Stashed changes
     element: <><Top></Top><FishingChecker></FishingChecker></>,
   },
   {
