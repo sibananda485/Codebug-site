@@ -8,16 +8,16 @@ import {Link} from "react-router-dom"
 export default function Footer() {
   return (
     <>
-    <div className="w-[80%] h-[151px] relative -mb-20 mt-10 bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto flex justify-evenly items-center flex-wrap">
+    <div className="w-[80%] p-5 relative -mb-10 lg:-mb-16 mt-10 bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto flex justify-evenly items-center flex-wrap">
             <a target="_blank" href="https://github.com/almighty-10">
               <img
-                className="hover:scale-110 duration-500 md:w-[100px] md:h-[100px] w-[50px] h-[50px]"
+                className="hover:scale-110 duration-500 w-8 md:w-16"
                 src={Git}
               />
             </a>
             <a target="_blank" href="https://www.instagram.com/team.almightyverse/?igsh=MXJtMzJ4M3plZW51eA%3D%3D">
               <img
-                className="hover:scale-110 duration-500 md:w-[100px] md:h-[100px] w-[50px] h-[50px]"
+                className="hover:scale-110 duration-500 w-8 md:w-16"
                 src={Insta}
               />
             </a>
@@ -25,13 +25,13 @@ export default function Footer() {
             
             <a target="_blank" href="mailto:almightyverseteam@gmail.com">
               <img
-                className="hover:scale-110 duration-500 md:w-[100px] md:h-[100px] w-[50px] h-[50px]"
+                className="hover:scale-110 duration-500 w-8 md:w-16"
                 src={Email}
               />
             </a>
             <a target="_blank" href="https://youtube.com/@AlmightyVerse?si=inqfw7BkapRC9Q8Z">
               <img
-                className="hover:scale-110 duration-500 md:w-[100px] md:h-[100px] w-[50px] h-[50px]"
+                className="hover:scale-110 duration-500 w-8 md:w-16"
                 src={Youtube}
               />
             </a>
