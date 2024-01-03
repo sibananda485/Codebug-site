@@ -37,7 +37,7 @@ const arr = [
     link: "/payload",
   },
   {
-    heading: "Duckey",
+    heading: "Ducky",
     para: "Phishing is a fraudulent communication that appears to come from a legitimate source, such as email or text messages.",
     img: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTsGn_fhJRb5W8ZGizfCdcFI8iy3gz5gYhElQ&usqp=CAU",
     link: "/duckey",
