@@ -5,7 +5,7 @@ import Terminal from "./Terminal";
 import a1 from "../assets/ddos/1.png";
 import a2 from "../assets/ddos/2&4.png";
 import a3 from "../assets/ddos/3.png";
-import DOSANDDOS from "../assets/ddos/DOS AND DDOS.png"
+import DOSANDDOS from "../assets/ddos/requestandresponse.png"
 import Intro from "../assets/ddos/DOS.png"
 import Footer from "./Footer"; 
 

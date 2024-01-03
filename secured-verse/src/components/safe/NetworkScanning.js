@@ -29,19 +29,6 @@ export default function NetworkScanning() {
             </p>
             {/* Template */}
             <h2 className="text-2xl lg:text-3xl font-semibold mb-5 mt-10 lg:mt-16">
-              Key Strategies for Phishing Prevention
-            </h2>
-            <h3 className="text-lg font-semibold mb-4 mt-10 lg:text-xl">
-              1. Verify Email Sender Information
-            </h3>
-            <p className="mb-3 lg:text-xl">
-              <p className="mb-3 lg:text-xl">
-                - Always scrutinize the sender's email address. Legitimate
-              </p>
-              organizations use official domains, and any deviation should raise
-              suspicion.
-            </p>
-            <h2 className="text-2xl lg:text-3xl font-semibold mb-5 mt-10 lg:mt-16">
                Network Security Measures
             </h2>
             <h3 className="text-lg font-semibold mb-4 mt-10 lg:text-xl">

@@ -6,6 +6,7 @@ import Email from "../images/email.png";
 import {Link} from "react-router-dom"
 
 export default function Footer() {
+  window.scroll(0,0)
   return (
     <>
     <div className="w-[80%] p-5 relative -mb-10 lg:-mb-16 mt-10 bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto flex justify-evenly items-center flex-wrap">
@@ -56,6 +57,7 @@ export default function Footer() {
                 <a target="_blank" className="block" href="mailto:almightyverseteam@gmail.com">Mail</a>
                 <a target="_blank" className="block" href="https://youtube.com/@AlmightyVerse?si=inqfw7BkapRC9Q8Z">Youtube</a>
                 <a target="_blank" className="block" href="https://www.instagram.com/team.almightyverse/?igsh=MXJtMzJ4M3plZW51eA%3D%3D">Instagram</a>
+                <Link to="/qr" className="block" href="https://youtube.com/@AlmightyVerse?si=inqfw7BkapRC9Q8Z">Share</Link>
               </ul>
             </div>
           </div>

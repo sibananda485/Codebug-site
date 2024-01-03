@@ -59,6 +59,15 @@ const teamData = [
     ],
   },
   {
+    dept: "Hacker",
+    members: [
+      {
+        img: Shadab,
+        name: "Shadab",
+      },
+    ],
+  },
+  {
     dept: "Developers",
     members: [
       {
@@ -75,6 +84,7 @@ const teamData = [
       },
     ],
   },
+
   {
     dept: "Digital Creation and Camera",
     members: [
@@ -118,15 +128,7 @@ const teamData = [
       },
     ],
   },
-  {
-    dept: "Hacker",
-    members: [
-      {
-        img: Shadab,
-        name: "Shadab",
-      },
-    ],
-  },
+
   {
     dept: "Decoration",
     members: [
@@ -137,6 +139,7 @@ const teamData = [
     ],
   },
 ];
+
 export default function About() {
   window.scroll(0, 0);
   return (
@@ -165,9 +168,6 @@ export default function About() {
                             <h2 className="text-xl font-semibold mb-2">
                               {data.name}
                             </h2>
-                            <p className="text-gray-100">
-                              Co-founder &amp; CEO
-                            </p>
                           </div>
                         </div>
                       );

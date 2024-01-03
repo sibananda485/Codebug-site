@@ -19,6 +19,7 @@ import NetworkScanningSafe from "./components/safe/NetworkScanning";
 import DuckeySafe from "./components/safe/Duckey";
 import PayloadSafe from "./components/safe/Payload";
 import Top from "./components/Top";
+import Qr from "./components/Qr";
 
 const router = createBrowserRouter([
   {
@@ -92,6 +93,10 @@ const router = createBrowserRouter([
   {
     path: "safe/payload",
     element: <><Top></Top><PayloadSafe></PayloadSafe></>,
+  },
+  {
+    path: "qr",
+    element: <><Top></Top><Qr></Qr></>,
   },
   
 ]);
