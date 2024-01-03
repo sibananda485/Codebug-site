@@ -25,7 +25,7 @@ export default function HomePage() {
           <h1 className="text-center my-10 pt-2 text-black font-light font-['Handjet'] text-4xl md:text-7xl">
             ARE YOU SECURE ?
           </h1>
-          <div className="md:flex flex flex-wrap w-full justify-center items-center gap-20">
+          <div className="md:flex flex flex-wrap w-full justify-center items-center gap-3 lg:gap-16">
             <div className="bg-gradient-to-b from-black via-black to-teal-950 rounded-[20px] w-[250px] h-[250px] md:w-[500px] md:h-[500px]">
               <img src={Comedic} alt="alt" />
             </div>
@@ -87,7 +87,6 @@ export default function HomePage() {
           </div>
 
           <div class="mx-1 px-2 py-2 max-w-7xl lg:mx-auto bg-gradient-to-r from-black to-[#003706] rounded-xl shadow-2xl text-black">
-
             <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto mb-8">
               <img
                 class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:ml-[-100px] mx-auto md:mx-4"
@@ -162,7 +161,6 @@ export default function HomePage() {
                 </div>
               </div>
             </div>
-
           </div>
           <Footer></Footer>
         </div>

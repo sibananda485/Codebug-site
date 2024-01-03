@@ -5,13 +5,13 @@ import { Link } from "react-router-dom";
 
 const arr = [
   {
-    heading: "Phinsing",
+    heading: "Phishing",
     para: "Phishing is a fraudulent communication that appears to come from a legitimate source, such as email or text messages.",
     img: "https://vipre.com/wp-content/uploads/2022/11/spear-phishing.jpeg",
     link: "/phishing",
   },
   {
-    heading: "DDos",
+    heading: "DDOS",
     para: "Phishing is a fraudulent communication that appears to come from a legitimate source, such as email or text messages.",
     img: "https://www.rcrwireless.com/wp-content/uploads/2022/12/182638386_s-696x385.jpg",
     position: "left",
