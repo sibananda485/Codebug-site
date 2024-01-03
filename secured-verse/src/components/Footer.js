@@ -8,15 +8,8 @@ import {Link} from "react-router-dom"
 export default function Footer() {
   return (
     <>
-<<<<<<< Updated upstream
     <div className="w-[80%] p-5 relative -mb-10 lg:-mb-16 mt-10 bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto flex justify-evenly items-center flex-wrap">
             <a target="_blank" href="https://github.com/almighty-10">
-=======
-      <div className="w-full text-white h-fit bg-gradient-to-b from-red-950 to-black shadow mt-10">
-        <div>
-          <div className="w-[80%] h-[151px] bg-gradient-to-r from-neutral-950 to-emerald-900 rounded-[10px] shadow m-auto flex justify-evenly items-center flex-wrap">
-            <a href="#">
->>>>>>> Stashed changes
               <img
                 className="hover:scale-110 duration-500 w-8 md:w-16"
                 src={Git}

@@ -86,14 +86,9 @@ export default function HomePage() {
             <div className="my-5">EXPLORE US</div>
             <div>→</div>
           </div>
-<<<<<<< Updated upstream
 
           <div class="mx-1 px-2 py-2 max-w-7xl lg:mx-auto bg-gradient-to-r from-black to-[#003706] rounded-xl shadow-2xl text-black">
             <div class="md:w-[1000px] w-fit md:h-[408px] sm:w-[375px] w-[300px bg-white bg-opacity-50 rounded-xl shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto mb-8">
-=======
-          <div className="w-[90vw] h-fit bg-gradient-to-r from-black to-[#003706] rounded-[15px] shadow text-black m-auto flex flex-col justify-between">
-            <div className="md:w-[1000px] md:h-[408px] w-[375px] bg-white bg-opacity-50 rounded-[10px] shadow md:m-auto md:my-16 md:flex md:flex-row flex-col md:items-center m-auto my-16">
->>>>>>> Stashed changes
               <img
                 class="p-1 md:w-[550px] md:h-80 w-[350px] rounded-[10px] md:ml-[-100px] mx-auto md:mx-4"
                 src={Man}
