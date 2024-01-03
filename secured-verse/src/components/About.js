@@ -16,7 +16,6 @@ import Vignesh from "../teamPhotos/vignesh.jpg";
 import Pranjali from "../teamPhotos/pranjali.jpg";
 import Misbah from "../teamPhotos/misba.jpg";
 import Sneha from "../teamPhotos/sneha.jpg";
-import Sneha2 from "../teamPhotos/senha2.jpg";
 import Manasi from "../teamPhotos/mansi.jpg";
 
 const teamData = [
